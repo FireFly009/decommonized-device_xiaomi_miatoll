@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     SM6250Frameworks \
     SM6250SystemUI \
+    SM6250Settings \
     TelephonyResCommon \
     WifiOverlay
 
