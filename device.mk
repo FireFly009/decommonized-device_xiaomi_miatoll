@@ -299,6 +299,7 @@ PRODUCT_PACKAGES += \
     SM6250Frameworks \
     SM6250Settings \
     SM6250SystemUI \
+    SM6250Settings \
     TelephonyResCommon \
     WifiOverlay
 
