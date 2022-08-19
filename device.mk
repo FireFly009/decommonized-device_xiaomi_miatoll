@@ -209,9 +209,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Libshims
+# Shims
 PRODUCT_PACKAGES += \
-    fakelogprint
+    fakelogprint \
+    libwatermark_shim
 
 # Lights
 PRODUCT_PACKAGES += \
