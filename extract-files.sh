@@ -46,6 +46,17 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc)
+            sed -i "s/4\.0/4\.1/g" "${2}"
+            ;;
+        vendor/lib64/camera/components/com.qti.node.watermark.so)
+        "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper for common device
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
