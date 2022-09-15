@@ -8,23 +8,30 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common xdroid stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+DERP_BUILDTYPE := Official
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-# xdroid props
-XDROID_BOOT := 1080
-XDROID_MAINTAINER := zlewchan
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_LEGACY_BOOTANIMATION := true
 
-PRODUCT_NAME := xdroid_miatoll
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := derp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := SM6250
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# GMS
+TARGET_GAPPS_ARCH := arm64
+WITH_GMS := true
+IS_PHONE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="miatoll_global-user 12 SKQ1.211019.001 V13.0.2.0.SJWMIXM release-keys"
