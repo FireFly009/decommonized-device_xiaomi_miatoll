@@ -165,7 +165,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    vendor.qti.hardware.fm@1.0:64 \
+    vendor.qti.hardware.fm@1.0.vendor:64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
