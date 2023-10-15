@@ -8,25 +8,25 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common TequilaOS stuff.
-$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
+# Inherit some common DerpFest AOSP stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+USE_LEGACY_BOOTANIMATION := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
+WITH_GMS := true
 
-PRODUCT_NAME := tequila_miatoll
+PRODUCT_NAME := derp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := SM6250
 
-# TequilaOS
-TEQUILA_BUILDTYPE := OFFICIAL
+# DerpFestOS
+DERP_BUILDTYPE := Official
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
