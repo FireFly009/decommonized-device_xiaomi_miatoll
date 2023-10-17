@@ -85,9 +85,6 @@ function blob_fixup() {
             sed -i "s|libMegviiFacepp-0.5.2.so|libFaceDetectpp-0.5.2.so|g" "${2}"
             sed -i "s|megviifacepp_0_5_2_model|facedetectpp_0_5_2_model|g" "${2}"
             ;;
-        vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
-            echo 'madvise: 1' >> ${2}
-            ;;
         # Fix NFC storage path
         vendor/etc/libnfc-nci.conf)
             sed -i "s/\/data\/nfc/\/data\/vendor\/nfc/g" "${2}"
