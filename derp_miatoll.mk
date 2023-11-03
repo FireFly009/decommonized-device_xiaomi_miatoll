@@ -14,6 +14,9 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_LEGACY_BOOTANIMATION := true
 TARGET_GAPPS_ARCH := arm64
