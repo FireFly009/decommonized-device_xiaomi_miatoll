@@ -230,7 +230,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_foundation-v33
 
 ifeq ($(TARGET_USES_DOLBY),true)
 PRODUCT_COPY_FILES += \
