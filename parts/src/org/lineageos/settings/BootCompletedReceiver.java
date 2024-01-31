@@ -25,6 +25,7 @@ import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.dolby.DolbyUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -43,6 +44,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Dirac
         // DiracUtils.onBootCompleted(context);
+
+        // Dolby Atmos
+        DolbyUtils.getInstance(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
