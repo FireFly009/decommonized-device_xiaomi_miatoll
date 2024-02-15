@@ -418,7 +418,7 @@ PRODUCT_COPY_FILES += \
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    removepackages
+    RemovePkgs
 
 # Sensors
 PRODUCT_PACKAGES += \
