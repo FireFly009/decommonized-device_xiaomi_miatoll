@@ -29,6 +29,12 @@ sh_binary {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.swappiness.sh",
+    src: "bin/init.swappiness.sh",
+    vendor: true,
+}
+
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",
