@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
+    audio_amplifier.tas2562 \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
