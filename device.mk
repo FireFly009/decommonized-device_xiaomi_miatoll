@@ -1,3 +1,4 @@
+# Media
 #
 # Copyright (C) 2021-2023 The LineageOS Project
 #
@@ -221,6 +222,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
