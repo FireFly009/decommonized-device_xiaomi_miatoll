@@ -23,7 +23,7 @@ dalvik.vm.image-dex2oat-threads=8
 persist.data.df.dev_name=rmnet_usb0
 
 # Disable MTE Async for system server
-arm64.memtag.process.system_server=off
+persist.arm64.memtag.system_server=off
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
