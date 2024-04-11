@@ -36,6 +36,9 @@ debug.performance.tuning=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Ftrace
 persist.debug.ftrace_events_disable=Yes
 
