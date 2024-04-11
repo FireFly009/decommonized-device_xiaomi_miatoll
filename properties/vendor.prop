@@ -280,6 +280,16 @@ ro.audio.spatializer_enabled=true
 ro.audio.spatializer_transaural_enabled_default=false
 persist.vendor.audio.spatializer.speaker_enabled=true
 
+# Surfaceflingers
+debug.sf.early_phase_offset_ns=100000
+debug.sf.early_app_phase_offset_ns=100000
+debug.sf.early_gl_phase_offset_ns=100000
+debug.sf.early_gl_app_phase_offset_ns=100000
+debug.sf.high_fps_early_phase_offset_ns=100000
+debug.sf.high_fps_early_gl_phase_offset_ns=100000
+debug.sf.high_fps_late_app_phase_offset_ns=100000
+debug.sf.high_fps_late_sf_phase_offset_ns=100000
+
 # Suspend Properties
 suspend.short_suspend_threshold_millis=2000
 suspend.short_suspend_backoff_enabled=true
