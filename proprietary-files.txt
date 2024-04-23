@@ -962,12 +962,14 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
+# NFC - from yaap-oneplus-sm8150
+vendor/etc/libnfc-nci.conf|3c2da7cc27916d84a61b5894a802da09e7c00bae
+vendor/etc/libnfc-nxp.conf|0cf0f541ea2db771b3fe659fc28ee587a011905d
+vendor/lib/libpn553_fw.so|17e467e0f9b5bd10186efd1b3a449494510edf78
+vendor/libnfc-nxp_RF.conf|4c758c560873efa415f6e569132cdf6d5bfe60de
+
 # NFC
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp-pnscr.conf
-vendor/lib/libpn553_fw.so
-vendor/libnfc-nxp_RF.conf
 
 # Peripheral
 vendor/bin/pm-proxy
