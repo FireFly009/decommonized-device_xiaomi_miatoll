@@ -251,6 +251,8 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.qcom
     # Set swappiness
     start swappiness-boot
+    # Conserve battery after 100H uptime
+    stop statsd
 
     # Restart qcrild
     stop vendor.qcrild
