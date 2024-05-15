@@ -279,11 +279,6 @@ debug.sf.early.sf.duration=15666666
 debug.sf.earlyGl.sf.duration=15666666
 debug.sf.late.sf.duration=15666666
 
-# Spatial Audio
-ro.audio.spatializer_enabled=true
-ro.audio.spatializer_transaural_enabled_default=false
-persist.vendor.audio.spatializer.speaker_enabled=true
-
 # Surfaceflingers
 debug.sf.early_phase_offset_ns=100000
 debug.sf.early_app_phase_offset_ns=100000
