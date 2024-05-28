@@ -420,9 +420,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
 
-# Remove unwanted packages
+# Remove packages
 PRODUCT_PACKAGES += \
-    RemovePkgs
+    RemovePackages
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -541,10 +541,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Launcher3QuickStep
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
