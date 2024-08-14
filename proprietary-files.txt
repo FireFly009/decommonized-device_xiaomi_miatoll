@@ -861,6 +861,24 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e336f4a3d0a50ee985639db6a8a70ec98171
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7ae61a9c75d4a17f0aad5969ce1a27cd5b0552ae
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|85a4e2ca843525db5c76486dbee4c5c7a672ee8d
 
+# Media (Dolby) - from sweet
+-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|13457b78a8ec28ccb814700d21774ed7f3c22dd2
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+-vendor/lib/libdapparamstorage.so|adad562803bd15c3793d14bc2c9bb1ef36e70854
+-vendor/lib/libdeccfg.so|3fec06710b28794e4127ef6b56bd6ecc5d0a3af7
+-vendor/lib/libstagefright_soft_ac4dec.so|ca5c35383d982a57c0f80dc51a4a0369eb457246
+-vendor/lib/libstagefright_soft_ddpdec.so|0f68ffaebea664d66bc35ec7870e05279dd0a459
+-vendor/lib/soundfx/libhwdap.so|41c47302694934307bab26084ce8502c0ab9699f
+-vendor/lib/soundfx/libswgamedap.so|a3297ce16ae6cc133bbccbd1f1fb044acef99a69
+-vendor/lib/soundfx/libswvqe.so|f1ecdcccd73c8885acbe8ecb8ca2fa36ff8888a5
+-vendor/lib/vendor.dolby.hardware.dms@2.0.so|a3e97168f1cfbafc4c6492bc26a45b039e1e61f4
+-vendor/lib64/libdapparamstorage.so|67ae45857561cb0450b872de1e7896ad7346481c
+-vendor/lib64/libdlbdsservice.so|11a59954bdf66209e705abb8873a8c63e6574b76
+-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|d33d7e5eb2be99895a0185816ff2685a738c4ac3
+-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|5320bc52055155c16a554ed65f9ccd48d9165232
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/bin/npu_launcher
