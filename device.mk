@@ -227,6 +227,11 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
 
 # Media (Dolby)
+TARGET_USES_DOLBY := true
+
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libcodec2_soft_common.vendor \
