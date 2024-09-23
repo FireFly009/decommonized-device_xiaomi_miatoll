@@ -199,17 +199,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fakelogprint
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 TARGET_DISABLE_C2_CODEC := false
@@ -286,16 +278,15 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiOverlay
 
-PRODUCT_PACKAGES += \
-    SM6250LineageDialer \
-    SM6250LineageSDK
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
+
+# Platform
+TARGET_BOARD_PLATFORM := atoll
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -343,6 +334,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr
 
