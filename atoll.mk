@@ -138,17 +138,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 PRODUCT_PACKAGES += \
     media_codecs_performance.xml \
@@ -177,16 +169,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     SM6250Frameworks \
+    SM6250Aperture \
     SM6250Settings \
     SM6250SystemUI \
     TelephonyResCommon \
     WifiOverlay
-
-PRODUCT_PACKAGES += \
-    SM6250Aperture \
-    SM6250LineageDialer \
-    SM6250LineageSDK \
-    SM6250LineageSettings
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
