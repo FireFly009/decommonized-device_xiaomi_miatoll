@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_miatoll.mk
+    $(LOCAL_DIR)/derp_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixelage_miatoll-user \
-    pixelage_miatoll-userdebug \
-    pixelage_miatoll-eng
+    derp_miatoll-user \
+    derp_miatoll-userdebug \
+    derp_miatoll-eng
