@@ -8,11 +8,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Yaap stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common Derpfest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
+
+# Derpfest
+DERP_BUILDTYPE := Official
+WITH_GMS := true
+DERP_VERSION_APPEND_TIME_OF_DAY := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -20,7 +25,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 TARGET_BUILD_GAPPS := true
 
-PRODUCT_NAME := yaap_miatoll
+PRODUCT_NAME := derp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

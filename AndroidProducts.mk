@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_miatoll.mk
+    $(LOCAL_DIR)/derp_miatoll.mk
